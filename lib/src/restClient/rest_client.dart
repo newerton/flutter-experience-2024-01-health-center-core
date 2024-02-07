@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:dio/io.dart';
-import 'package:flutter_experience_medical_laboratory_core/src/restClient/interceptors/auth_interceptor.dart';
+import 'package:health_center_core/src/restClient/interceptors/auth_interceptor.dart';
 
 final class RestClient extends DioForNative {
   RestClient(String baseUrl)

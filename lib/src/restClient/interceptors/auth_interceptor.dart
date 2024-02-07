@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_experience_medical_laboratory_core/src/constants/local_storage_constants.dart';
+import 'package:health_center_core/src/constants/local_storage_constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 final class AuthInterceptor extends Interceptor {

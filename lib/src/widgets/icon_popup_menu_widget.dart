@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_experience_medical_laboratory_core/flutter_experience_medical_laboratory_core.dart';
+import 'package:health_center_core/health_center_core.dart';
 
 class IconPopupMenuWidget extends StatelessWidget {
   const IconPopupMenuWidget({super.key});
@@ -12,9 +12,9 @@ class IconPopupMenuWidget extends StatelessWidget {
         decoration: BoxDecoration(
             shape: BoxShape.circle,
             border: Border.all(
-                color: MedicalLaboratoryTheme.orangeColor, width: 2)),
+                color: HealthCenterTheme.orangeColor, width: 2)),
         child: const Icon(Icons.more_horiz_rounded,
-            color: MedicalLaboratoryTheme.orangeColor),
+            color: HealthCenterTheme.orangeColor),
       ),
     );
   }

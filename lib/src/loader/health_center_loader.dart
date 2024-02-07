@@ -2,8 +2,8 @@ import 'package:asyncstate/asyncstate.dart';
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 
-final class MedicalLaboratoryLoader extends AsyncOverlay {
-  MedicalLaboratoryLoader()
+final class HealthCenterLoader extends AsyncOverlay {
+  HealthCenterLoader()
       : super(
             id: 0,
             builder:

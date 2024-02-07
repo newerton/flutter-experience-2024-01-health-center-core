@@ -1,12 +1,12 @@
 import 'package:asyncstate/asyncstate.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_experience_medical_laboratory_core/src/loader/medical_laboratory_loader.dart';
-import 'package:flutter_experience_medical_laboratory_core/src/theme/medical_laboratory_theme.dart';
+import 'package:health_center_core/src/loader/health_center_loader.dart';
+import 'package:health_center_core/src/theme/health_center_theme.dart';
 import 'package:flutter_getit/flutter_getit.dart';
 
-class MedicalLaboratoryAppCore extends StatelessWidget {
-  const MedicalLaboratoryAppCore(
+class HealthCenterAppCore extends StatelessWidget {
+  const HealthCenterAppCore(
       {super.key,
       this.bindings,
       this.pagesRouters,
@@ -29,12 +29,12 @@ class MedicalLaboratoryAppCore extends StatelessWidget {
         modules: modules,
         builder: ((context, routes, flutterGetItNavObserver) {
           return AsyncStateBuilder(
-              loader: MedicalLaboratoryLoader(),
+              loader: HealthCenterLoader(),
               builder: (navigatorObserver) {
                 return MaterialApp(
                   title: title,
-                  theme: MedicalLaboratoryTheme.lightTheme,
-                  darkTheme: MedicalLaboratoryTheme.darkTheme,
+                  theme: HealthCenterTheme.lightTheme,
+                  darkTheme: HealthCenterTheme.darkTheme,
                   navigatorObservers: [
                     navigatorObserver,
                     flutterGetItNavObserver

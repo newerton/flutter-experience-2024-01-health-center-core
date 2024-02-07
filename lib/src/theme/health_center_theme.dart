@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-final class MedicalLaboratoryTheme {
+final class HealthCenterTheme {
   static const orangeColor = Color(0xFFFFAe45);
   static const lightOrangeColor = Color(0xFFFFEFE9);
   static const blueColor = Color(0xFF01BDD6);

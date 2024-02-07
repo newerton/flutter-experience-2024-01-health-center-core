@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class MedicalLaboratoryAppBar extends AppBar {
-  MedicalLaboratoryAppBar({super.key, super.actions})
+class HealthCenterAppBar extends AppBar {
+  HealthCenterAppBar({super.key, super.actions})
       : super(
             toolbarHeight: 72,
             backgroundColor: Colors.transparent,
