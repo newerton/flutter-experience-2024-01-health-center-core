@@ -2,6 +2,7 @@ import 'package:asyncstate/asyncstate.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_experience_medical_laboratory_core/src/loader/medical_laboratory_loader.dart';
+import 'package:flutter_experience_medical_laboratory_core/src/theme/medical_laboratory_theme.dart';
 import 'package:flutter_getit/flutter_getit.dart';
 
 class MedicalLaboratoryAppCore extends StatelessWidget {
@@ -32,14 +33,14 @@ class MedicalLaboratoryAppCore extends StatelessWidget {
               builder: (navigatorObserver) {
                 return MaterialApp(
                   title: title,
-                  theme: ThemeData(
-                    primarySwatch: Colors.blue,
-                  ),
+                  theme: MedicalLaboratoryTheme.lightTheme,
+                  darkTheme: MedicalLaboratoryTheme.darkTheme,
                   navigatorObservers: [
                     navigatorObserver,
                     flutterGetItNavObserver
                   ],
                   routes: routes,
+                  debugShowCheckedModeBanner: false,
                 );
               });
         }));
