@@ -1,7 +1,7 @@
 name: health_center_core
 description: "A new Flutter package project."
 version: 0.0.1
-homepage: "http://example.com"
+homepage: "https://example.com"
 
 environment:
   sdk: ">=3.2.6 <4.0.0"

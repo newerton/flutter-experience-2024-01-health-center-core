@@ -17,10 +17,6 @@ final class HealthCenterTheme {
     fontFamily: 'Montserrat',
     scaffoldBackgroundColor: lightOrangeColor,
     inputDecorationTheme: InputDecorationTheme(
-      border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(6),
-        borderSide: BorderSide.none,
-      ),
       labelStyle: const TextStyle(
         color: orangeColor,
         fontSize: 14,
@@ -32,6 +28,7 @@ final class HealthCenterTheme {
         color: blueColor,
         fontWeight: FontWeight.w600,
       ),
+      border: _defaultInputBorder,
       enabledBorder: _defaultInputBorder,
       focusedBorder: _defaultInputBorder,
       errorBorder: _defaultInputBorder.copyWith(
@@ -47,6 +44,18 @@ final class HealthCenterTheme {
               fontFamily: 'Montserrat',
               fontSize: 14,
               fontWeight: FontWeight.w700)),
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        backgroundColor: Colors.white,
+        foregroundColor: blueColor,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
+        side: const BorderSide(color: blueColor),
+        textStyle: const TextStyle(
+            fontFamily: 'Montserrat',
+            fontSize: 14,
+            fontWeight: FontWeight.w700),
+      ),
     ),
   );
 

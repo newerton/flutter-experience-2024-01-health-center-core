@@ -11,8 +11,7 @@ class IconPopupMenuWidget extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
             shape: BoxShape.circle,
-            border: Border.all(
-                color: HealthCenterTheme.orangeColor, width: 2)),
+            border: Border.all(color: HealthCenterTheme.orangeColor, width: 2)),
         child: const Icon(Icons.more_horiz_rounded,
             color: HealthCenterTheme.orangeColor),
       ),

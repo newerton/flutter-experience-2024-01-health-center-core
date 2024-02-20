@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class HealthCenterAppBar extends AppBar {
-  HealthCenterAppBar({super.key, super.actions})
+  HealthCenterAppBar(
+      {super.key, super.actions, super.automaticallyImplyLeading})
       : super(
             toolbarHeight: 72,
             backgroundColor: Colors.transparent,
@@ -20,7 +21,9 @@ class HealthCenterAppBar extends AppBar {
               ]),
               child: SafeArea(
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 16),
+                  padding: automaticallyImplyLeading
+                      ? const EdgeInsets.only(left: 56)
+                      : const EdgeInsets.only(left: 16),
                   child: Image.asset('assets/images/logo_horizontal.png'),
                 ),
               ),
