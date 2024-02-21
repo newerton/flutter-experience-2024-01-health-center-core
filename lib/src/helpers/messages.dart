@@ -34,10 +34,10 @@ mixin MessageStateMixin {
   String? get errorMessage => _errorMessage();
 
   final Signal<String?> _infoMessage = signal(null);
-  String? get infoMessage => _errorMessage();
+  String? get infoMessage => _infoMessage();
 
   final Signal<String?> _successMessage = signal(null);
-  String? get successMessage => _errorMessage();
+  String? get successMessage => _successMessage();
 
   void clearError() => _errorMessage.value = null;
   void clearInfo() => _infoMessage.value = null;

@@ -12,13 +12,15 @@ class HealthCenterAppCore extends StatelessWidget {
       this.pagesRouters,
       this.pagesBuilders,
       this.modules,
-      required this.title});
+      required this.title,
+      this.onInit});
 
   final ApplicationBindings? bindings;
   final List<FlutterGetItPageRouter>? pagesRouters;
   final List<FlutterGetItPageBuilder>? pagesBuilders;
   final List<FlutterGetItModule>? modules;
   final String title;
+  final VoidCallback? onInit;
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +30,9 @@ class HealthCenterAppCore extends StatelessWidget {
         pages: [...pagesRouters ?? [], ...pagesBuilders ?? []],
         modules: modules,
         builder: ((context, routes, flutterGetItNavObserver) {
+          if (onInit != null) {
+            onInit!();
+          }
           return AsyncStateBuilder(
               loader: HealthCenterLoader(),
               builder: (navigatorObserver) {
